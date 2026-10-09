@@ -1,0 +1,89 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://Player.tscn" id="1"]
+[ext_resource type="PackedScene" path="res://hazard.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://DirtShooter.tscn" id="3"]
+[ext_resource type="Script" path="res://Level.gd" id="4"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(64, 160)
+
+[sub_resource type="ImageTexture" id="7"]
+
+[sub_resource type="ImageTexture" id="8"]
+
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(1000, 64)
+
+[sub_resource type="ImageTexture" id="3"]
+
+[sub_resource type="ImageTexture" id="6"]
+
+[node name="Level" type="Node2D"]
+position = Vector2(-2, -2)
+script = ExtResource("4")
+
+[node name="Ground" type="StaticBody2D" parent="."]
+
+[node name="wall" type="StaticBody2D" parent="Ground"]
+constant_linear_velocity = Vector2(-0.06, 0)
+
+[node name="wall1" type="CollisionShape2D" parent="Ground/wall"]
+position = Vector2(400, -110)
+shape = SubResource("1")
+
+[node name="Sprite2D" type="Sprite2D" parent="Ground/wall/wall1"]
+position = Vector2(-3, 0)
+texture = SubResource("7")
+normal_map = SubResource("8")
+
+[node name="ground" type="CollisionShape2D" parent="Ground"]
+shape = SubResource("2")
+one_way_collision_margin = 0.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Ground/ground"]
+position = Vector2(-1, 1)
+texture = SubResource("3")
+normal_map = SubResource("6")
+
+[node name="wall2" type="StaticBody2D" parent="Ground"]
+position = Vector2(-1, -6)
+constant_linear_velocity = Vector2(-0.06, 0)
+
+[node name="wall2" type="CollisionShape2D" parent="Ground/wall2"]
+position = Vector2(162, -107)
+shape = SubResource("1")
+
+[node name="Sprite2D" type="Sprite2D" parent="Ground/wall2/wall2"]
+position = Vector2(0, 1)
+texture = SubResource("7")
+normal_map = SubResource("8")
+
+[node name="Player" parent="." instance=ExtResource("1")]
+position = Vector2(-336, -54)
+
+[node name="hazard" parent="." instance=ExtResource("2")]
+position = Vector2(-45, -32)
+scale = Vector2(2.975, 1)
+
+[node name="DirtShooter1" parent="." instance=ExtResource("3")]
+position = Vector2(109, -51)
+
+[node name="DirtShooter2" parent="." instance=ExtResource("3")]
+position = Vector2(349, -51)
+
+[node name="Button" type="CanvasLayer" parent="."]
+
+[node name="TryAgainButton" type="Button" parent="Button"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -10.0
+offset_right = 35.0
+offset_bottom = 10.0
+text = "Try Again"
+
+[connection signal="pressed" from="Button/TryAgainButton" to="Player" method="_on_TryAgainButton_pressed"]
