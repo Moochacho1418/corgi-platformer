@@ -22,8 +22,8 @@ const WALL_BUFFER_TIME = 0.15
 
 # Dash
 var is_dashing = false
-var dash_speed = 5000
-var dash_duration = 0.3
+var dash_speed = 900
+var dash_duration = 0.2
 var dash_timer = 0.0
 const MAX_DASHES = 3
 const DASH_COOLDOWN = 3.0
@@ -33,7 +33,9 @@ var dash_cooldowns = []
 @onready var try_again_button = get_node("/root/Level/Button/TryAgainButton") 
 
 func _physics_process(delta):
-	handle_input()
+	# Steering is skipped mid-dash, otherwise it zeroes velocity.x and kills the dash after one frame
+	if not is_dashing:
+		handle_input()
 	handle_dash(delta)
 	handle_wall_climb_and_grab(delta)
 	handle_jump()
@@ -70,7 +72,8 @@ func handle_gravity(delta):
 func handle_wall_climb_and_grab(delta):
 	var on_floor = is_on_floor()
 	var wall_normal = get_wall_normal()
-	var touching_wall = abs(wall_normal.x) > 0.9
+	# get_wall_normal() keeps its last value after leaving a wall, so it only counts while is_on_wall()
+	var touching_wall = is_on_wall() and abs(wall_normal.x) > 0.9
 
 	# Buffer wall contact
 	if touching_wall:

@@ -8,16 +8,8 @@
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(64, 160)
 
-[sub_resource type="ImageTexture" id="7"]
-
-[sub_resource type="ImageTexture" id="8"]
-
 [sub_resource type="RectangleShape2D" id="2"]
 size = Vector2(1000, 64)
-
-[sub_resource type="ImageTexture" id="3"]
-
-[sub_resource type="ImageTexture" id="6"]
 
 [node name="Level" type="Node2D"]
 position = Vector2(-2, -2)
@@ -32,19 +24,23 @@ constant_linear_velocity = Vector2(-0.06, 0)
 position = Vector2(400, -110)
 shape = SubResource("1")
 
-[node name="Sprite2D" type="Sprite2D" parent="Ground/wall/wall1"]
-position = Vector2(-3, 0)
-texture = SubResource("7")
-normal_map = SubResource("8")
+[node name="Color" type="ColorRect" parent="Ground/wall/wall1"]
+offset_left = -32.0
+offset_top = -80.0
+offset_right = 32.0
+offset_bottom = 80.0
+color = Color(0.45, 0.32, 0.22, 1)
 
 [node name="ground" type="CollisionShape2D" parent="Ground"]
 shape = SubResource("2")
 one_way_collision_margin = 0.0
 
-[node name="Sprite2D" type="Sprite2D" parent="Ground/ground"]
-position = Vector2(-1, 1)
-texture = SubResource("3")
-normal_map = SubResource("6")
+[node name="Color" type="ColorRect" parent="Ground/ground"]
+offset_left = -500.0
+offset_top = -32.0
+offset_right = 500.0
+offset_bottom = 32.0
+color = Color(0.36, 0.55, 0.25, 1)
 
 [node name="wall2" type="StaticBody2D" parent="Ground"]
 position = Vector2(-1, -6)
@@ -54,10 +50,12 @@ constant_linear_velocity = Vector2(-0.06, 0)
 position = Vector2(162, -107)
 shape = SubResource("1")
 
-[node name="Sprite2D" type="Sprite2D" parent="Ground/wall2/wall2"]
-position = Vector2(0, 1)
-texture = SubResource("7")
-normal_map = SubResource("8")
+[node name="Color" type="ColorRect" parent="Ground/wall2/wall2"]
+offset_left = -32.0
+offset_top = -80.0
+offset_right = 32.0
+offset_bottom = 80.0
+color = Color(0.45, 0.32, 0.22, 1)
 
 [node name="Player" parent="." instance=ExtResource("1")]
 position = Vector2(-336, -54)
