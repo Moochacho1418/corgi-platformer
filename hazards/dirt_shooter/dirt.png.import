@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ce55m6p3bac3j"
-path="res://.godot/imported/alice_2.png-b1a3bc0f1defe9d37d1ff8af07b211d5.ctex"
+uid="uid://cj41lc4or0cno"
+path="res://.godot/imported/dirt.png-bb811614c30f8d65d84c622e25e524d8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://alice/alice_2.png"
-dest_files=["res://.godot/imported/alice_2.png-b1a3bc0f1defe9d37d1ff8af07b211d5.ctex"]
+source_file="res://hazards/dirt_shooter/dirt.png"
+dest_files=["res://.godot/imported/dirt.png-bb811614c30f8d65d84c622e25e524d8.ctex"]
 
 [params]
 

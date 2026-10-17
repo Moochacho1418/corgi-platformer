@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://tusxveo5tcdl"
-path="res://.godot/imported/dirtcannon.png-704e9d5ca51345063d777bc935c0f1ab.ctex"
+uid="uid://cniemp8eg7lsb"
+path="res://.godot/imported/icon.png-c3d958876317c5b9ff9d73fef1b6123f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dirtcannon.png"
-dest_files=["res://.godot/imported/dirtcannon.png-704e9d5ca51345063d777bc935c0f1ab.ctex"]
+source_file="res://art/icon.png"
+dest_files=["res://.godot/imported/icon.png-c3d958876317c5b9ff9d73fef1b6123f.ctex"]
 
 [params]
 

@@ -1,9 +1,9 @@
 [gd_scene format=3]
 
-[ext_resource type="PackedScene" path="res://Player.tscn" id="1"]
-[ext_resource type="PackedScene" path="res://hazard.tscn" id="2"]
-[ext_resource type="PackedScene" path="res://DirtShooter.tscn" id="3"]
-[ext_resource type="Script" path="res://Level.gd" id="4"]
+[ext_resource type="PackedScene" path="res://player/player.tscn" id="1"]
+[ext_resource type="PackedScene" path="res://hazards/hazard/hazard.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://hazards/dirt_shooter/dirt_shooter.tscn" id="3"]
+[ext_resource type="Script" path="res://levels/level.gd" id="4"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(64, 160)
@@ -72,7 +72,7 @@ position = Vector2(349, -51)
 
 [node name="Button" type="CanvasLayer" parent="."]
 
-[node name="TryAgainButton" type="Button" parent="Button"]
+[node name="TryAgainButton" type="Button" parent="Button" groups=["try_again_button"]]
 visible = false
 anchor_left = 0.5
 anchor_top = 0.5

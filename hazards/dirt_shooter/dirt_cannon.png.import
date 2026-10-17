@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cj41lc4or0cno"
-path="res://.godot/imported/DIRT.png-d1818315bdc6769da0994641416f1639.ctex"
+uid="uid://tusxveo5tcdl"
+path="res://.godot/imported/dirt_cannon.png-acec481b395c936c86b5e8157aa98ae9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DIRT.png"
-dest_files=["res://.godot/imported/DIRT.png-d1818315bdc6769da0994641416f1639.ctex"]
+source_file="res://hazards/dirt_shooter/dirt_cannon.png"
+dest_files=["res://.godot/imported/dirt_cannon.png-acec481b395c936c86b5e8157aa98ae9.ctex"]
 
 [params]
 

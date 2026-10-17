@@ -1,10 +1,10 @@
 [gd_scene format=3]
 
-[ext_resource type="Script" path="res://Player.gd" id="1"]
-[ext_resource type="Texture2D" path="res://alice/alice_1.png" id="a1"]
-[ext_resource type="Texture2D" path="res://alice/alice_2.png" id="a2"]
-[ext_resource type="Texture2D" path="res://alice/alice_3.png" id="a3"]
-[ext_resource type="Texture2D" path="res://alice/alice_4.png" id="a4"]
+[ext_resource type="Script" path="res://player/player.gd" id="1"]
+[ext_resource type="Texture2D" path="res://player/alice/alice_1.png" id="a1"]
+[ext_resource type="Texture2D" path="res://player/alice/alice_2.png" id="a2"]
+[ext_resource type="Texture2D" path="res://player/alice/alice_3.png" id="a3"]
+[ext_resource type="Texture2D" path="res://player/alice/alice_4.png" id="a4"]
 
 [sub_resource type="SpriteFrames" id="1"]
 animations = [{

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbhns2ydh5b64"
-path="res://.godot/imported/alice_1.png-d2bc4a7f165b6b1b1db3e866a40288f6.ctex"
+uid="uid://c3n1u2xcfcyae"
+path="res://.godot/imported/hazard.png-ae750e8f787b43b412c40c353151b559.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://alice/alice_1.png"
-dest_files=["res://.godot/imported/alice_1.png-d2bc4a7f165b6b1b1db3e866a40288f6.ctex"]
+source_file="res://hazards/hazard/hazard.png"
+dest_files=["res://.godot/imported/hazard.png-ae750e8f787b43b412c40c353151b559.ctex"]
 
 [params]
 

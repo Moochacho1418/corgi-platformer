@@ -3,3 +3,11 @@ _notes/
 *.tmp
 
 alice_best_day_initial_draft.png*
+
+# Art stays local, not on GitHub
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.aseprite
+*.psd

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rikif0j5te1m"
-path="res://.godot/imported/alice_4.png-60e1793a2f4ad5418aced203f40a1d96.ctex"
+uid="uid://bbhns2ydh5b64"
+path="res://.godot/imported/alice_1.png-4d12d5b0eb269cec6eeaf32928032817.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://alice/alice_4.png"
-dest_files=["res://.godot/imported/alice_4.png-60e1793a2f4ad5418aced203f40a1d96.ctex"]
+source_file="res://player/alice/alice_1.png"
+dest_files=["res://.godot/imported/alice_1.png-4d12d5b0eb269cec6eeaf32928032817.ctex"]
 
 [params]
 
